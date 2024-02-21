@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sample Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 75%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-address-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+        }
+        .address-name {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+        .address-name h1 {
+            font-size: 30px;
+            font-weight: 600;
+            color: #000;
+        }
+        .icon-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+        }
+        .icon {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .icon img {
+            width: 30px;
+            height: 30px;
+        }
+        .container-content-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .content-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-title h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #000;
+        }
+        .content-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+        .content-text p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+        }
+        .container-data-section {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            width: 100%;
+        }
+        .container .data-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .data-title h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #000;
+        }
+        .data-table {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 20px;
+            border: 1px solid #000;
+            margin-right: 2rem;
+        }
+        .data-table table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #000;
+        }
+        .data-table table td {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+        .data-table table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .data-table table tr:hover {
+            background-color: #ddd;
+        }
+        .data-table table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #000;
+            color: white;
+        }
+        .data-table table #td1 {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            text-align: center;
+            background-color: #f2f2f2;
+            width: 25%;
+        }
+        .data-table table #td2 {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            text-align: center;
+            width: 75%;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-address-section">
+            <div class="address-name">
+                <h1>Address Name </h1>
+            </div>
+            <div class="icon-content">
+                <span class="icon">
+                    <img src="css/file-pdf-solid.svg">
+                </span>
+                <span class="icon">
+                    <img src="css/print-solid.svg">
+                </span>
+                <span class="icon">
+                    <img src="css/envelope-solid.svg">
+                </span>
+            </div>
+                    
+        </div>
+        <hr>
+        <div class="container-content-section">
+            <div class="content-title">
+                <h2>Content:</h2>
+            </div>
+            <div class="content-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt velit dolores voluptatibus deleniti porro ea repellat animi at? Non aut corporis nulla quibusdam expedita fugiat iusto possimus doloribus quis temporibus, consectetur, obcaecati tempora assumenda inventore culpa deserunt eos dolorem repudiandae tenetur nemo aperiam ducimus esse! Sed tempore dignissimos dolore culpa fugiat eum quas obcaecati dolorem id explicabo excepturi omnis modi aperiam quis cum aspernatur illum labore perferendis vitae quam nesciunt, magnam corporis odit? Quis quaerat deserunt magni. Enim similique nobis earum. Consequatur sit aliquam a architecto iusto expedita impedit accusamus facilis cum. Veritatis aperiam, explicabo alias nemo assumenda maxime perferendis labore neque rem dicta nesciunt expedita aliquam minus dolorum temporibus laudantium quas reprehenderit omnis, sapiente accusamus rerum necessitatibus delectus sunt? Magni minima suscipit, ullam sint doloremque expedita ratione tempore. Nihil earum tempora, illum eligendi, harum ex ullam repudiandae excepturi, perferendis culpa itaque quidem cupiditate sed pariatur asperiores natus consectetur quo molestias vitae nesciunt rerum? Facilis in dignissimos alias nulla provident consequuntur delectus quibusdam rerum consectetur eveniet, nihil recusandae aliquid at, quo ut odio inventore ipsum reiciendis commodi. Quaerat ipsam, impedit expedita labore eligendi incidunt? Repellat autem harum fuga, saepe a non blanditiis, inventore eos ex similique dicta earum cumque?</p>
+            </div>
+        </div>
+        <hr>
+        <div class="container-data-section">
+            <div class="data-title">
+                <h2>Data:</h2>
+            </div>
+            <div class="data-table">
+                <table>
+                    <tr>
+                        <td id="td1">Tax parcel Number</td>
+                        <td id="td2">    </td>
+                        
+                    </tr>
+                    <tr>
+                        <td id="td1">Street number</td>
+                        <td id="td2">    </td>
+                        
+                    </tr>
+                    <tr>
+                        <td id="td1">Street Name</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Present Use</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Historic Function</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Historic Use</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Date of Construction</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Dates of alteration</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Style</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">No. of Stories</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Construction method</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Exterior material: historic 1</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Exterior material: historic 2</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Exterior material: present</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Roof Type</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Roof Material</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Foundation Material</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Additions</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Porch location 1</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Porch condition</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Window condition</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Overall integrity</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Contributing</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Endangered</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Distinctive features</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Notes</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Outbldg 1 type</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Outbldg 1 date</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Outbldg 1 construction method</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Outbldg 1 distinctive features</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Outbldg 2 type</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Outbldg 2 date</td>
+                        <td id="td2">    </td>
+                    </tr>
+                    <tr>
+                        <td id="td1">Landscape features</td>
+                        <td id="td2">    </td>
+                </table>
+
+
+            </div>
+        </div>
+        <hr>
+        <div class="container-documents-section">
+            <div class="container-docs-title">
+                <h2>Documents:</h2>
+            </div>
+            <div class="container-documents">
+                <h6>Document Data will go here</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="container-photos-section">
+            <div class="container-photos-title">
+                <h2>Photos:</h2>
+            </div>
+            <div class="container-photos">
+                <h6>Photo Data will go here</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="container-bottom-section">
+            <p>CID: {{ CID Goes here}}</p>
+            <p>Old ID: {{ Old ID Goes here}}</p>
+            <p>Coordinates: {{ Coordinates Goes here}}</p>
+            <p>Address: {{ Address Goes here}}</p>
+        </div>
+    </div>
+</body>
+</html>
